@@ -210,7 +210,7 @@ public class AccountDAO {
 		try {
 			con = db.getConnection();
 			PreparedStatement statement = con.prepareStatement(sql);
-			statement.setString(1, id);
+			statement.setInt(1, Integer.parseInt(id));
 			statement.setString(2, isbn);
 			statement.setString(3, fee);
 			statement.setString(4, time);

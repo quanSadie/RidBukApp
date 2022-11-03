@@ -10,7 +10,7 @@ public class run {
 
 	public static void main(String[] args) throws JSONException, IOException {
 		AccountDAO dao = new AccountDAO();
-		System.out.println(dao.displayOneUser("1"));
+		System.out.println(dao.insertLogs("1", "32132141", "23", "2022"));
 	}
 
 }

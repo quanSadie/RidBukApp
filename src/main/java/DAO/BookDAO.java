@@ -57,7 +57,7 @@ public class BookDAO {
 		try {
 			con = db.getConnection();
 			PreparedStatement statement = con.prepareStatement(sql);
-			statement.setString(1, id);
+			statement.setInt(1, Integer.parseInt(id));
 			ResultSet rs = statement.executeQuery();
 			while (rs.next()) {
 				list.add(rs.getString("book_isbn"));
@@ -153,7 +153,7 @@ public class BookDAO {
 		try {
 			con = db.getConnection();
 			PreparedStatement statement = con.prepareStatement(sql);
-			statement.setString(1, id);
+			statement.setInt(1, Integer.parseInt(id));
 			ResultSet rs = statement.executeQuery();
 			while (rs.next()) {
 				list.add(rs.getString("book_isbn"));
