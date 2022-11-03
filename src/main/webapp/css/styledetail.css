@@ -1,0 +1,75 @@
+#bookContainer {
+    display: flex;
+}
+
+#property1 li {
+    margin-right: 10px;
+}
+
+.bge2 {
+    background: #eee;
+    padding: 20px;
+}
+
+.mrg20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.btn,
+.thumbnail {
+    border-radius: 0;
+}
+
+.btn-block {
+    width: 270px;
+    height: 40px;
+}
+
+.btn1 {
+    background: #b2395b;
+    color: #fff;
+}
+
+.max300 {
+    max-width: 300px;
+}
+
+.pricebox {
+    margin-top: 10px;
+    max-width: 300px;
+}
+
+.market {
+    text-align: left;
+}
+
+.table a.none {
+    text-decoration: none;
+}
+
+.tbprice td:nth-child(2) {
+    width: 20%;
+}
+
+.desc {
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.t50 {
+    width: 50%;
+}
+
+.nobr {
+    white-space: nowrap;
+}
+
+.color2 {
+    color: #b2395b;
+}
+
+.nav-tabs>li>a {
+    border-radius: 0;
+}

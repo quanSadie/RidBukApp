@@ -1,0 +1,59 @@
+.linklist{
+    text-decoration: none;
+}
+.user-sidebar {
+    margin: 0 0 20px;
+    position: relative;
+}
+.userinfo{
+    background:#222;
+    height: 100px;
+}
+.user-sidebar .userinfo figure{
+    padding: 10px;
+    margin: 0px;
+    width: 500%;
+    
+}
+.user-sidebar .userinfo figure figcaption .title{
+    color:#fff;
+    opacity:.8;
+    font-weight:300;
+    display: flex;
+    margin:0px;
+}
+.user-sidebar .userinfo figure figcaption .user-name{
+    text-transform:uppercase;
+    font-weight:700;
+    font-size:14px;
+    color:#fff;
+    max-width:100px;
+    text-overflow:ellipsis;
+    display: flex;
+    
+}
+.user-sidebar .userinfo figure .user-img {
+    display: flex;
+    width: 80px;
+    float: left;
+}
+.useritem{
+    width: 80px;
+}
+.user-sidebar .userinfo figure figcaption {
+    display: flex;
+    padding: 15px 5px 15px 10px;
+}
+.user-sidelink ul li a {
+    display: block;
+    color: whitesmoke;
+    padding: 9px 30px;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform:uppercase;
+    font-weight:700;
+}
+a:hover{
+    background-color: gray;
+}
