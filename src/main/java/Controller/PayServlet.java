@@ -37,6 +37,7 @@ public class PayServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
+
 		String u_id = request.getParameter("uID");
 		String product = request.getParameter("product");
 		String subtotal = request.getParameter("subtotal");
@@ -45,7 +46,13 @@ public class PayServlet extends HttpServlet {
 		String total = request.getParameter("total");
 		String bookISBN = request.getParameter("bookisbn");
 		BookDAO dao = new BookDAO();
-		dao.addUser_Book(Integer.parseInt(u_id), bookISBN);
+		if (u_id == null) {
+			response.sendRedirect("login.jsp");
+			return;
+		} else {
+			dao.addUser_Book(Integer.parseInt(u_id), bookISBN);
+		}
+
 		AccountDAO accDAO = new AccountDAO();
 		accDAO.insertLogs(u_id, bookISBN, total, LocalDateTime.now().toString());
 

@@ -31,6 +31,13 @@
         font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 15px;
         }
+        .desLine {
+         overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 5; /* number of lines to show */
+           line-clamp: 5; 
+   -webkit-box-orient: vertical;}
     </style>
 </head>
 <body style="background-color: #D8C3A5;">

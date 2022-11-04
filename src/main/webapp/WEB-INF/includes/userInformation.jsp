@@ -52,11 +52,12 @@
                         </h1>
                         <div class="account-info clearfix">
                             <h2 class="posttitle">Update information</h2>
-                            <form action="updateProfile">
+                            <form action="updateProfile" method="post">
                             <div class="account-form clearfix">
                                 <div class="row">
                                     <div class="col-sm-9">
                                         <div id="ctl00_mainContent_divUserName" class="form-group">
+                                        <input type="hidden" name="person_idd" id="person_idd" value="<%=acc.getUserID()%>">
                                             <label for="ctl00_mainContent_txtName" class="control-label">Username</label>
                                             <input name="ctl00$mainContent$txtName" type="text" value="<%=acc.getUserName() %>" maxlength="100" id="ctl00_mainContent_txtName" disabled="disabled" tabindex="10" class="aspNetDisabled form-control">
                                             <span id="ctl00_mainContent_rfvName" style="display:none;"></span>
@@ -70,13 +71,13 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="ctl00_mainContent_txtFirstName" class="control-label">Display name</label>
-                                            <input name="ctl00$mainContent$txtFirstName" type="text" name="personName" value="<%=acc.getFullName() %>" maxlength="100" id="ctl00_mainContent_txtFirstName" class="form-control">
+                                            <input type="text" name="personName" id="personName" value="<%=acc.getFullName() %>" maxlength="100" id="ctl00_mainContent_txtFirstName" class="form-control">
                                             <span id="ctl00_mainContent_FirstNameRequired" class="error" style="display:none;">Vui lòng nhập Tên</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="button-wrap">
-                                    <input type="submit" name="ctl00$mainContent$btnUpdate" value="Cập nhật" id="ctl00_mainContent_btnUpdate" class="btn btn-primary" style="margin-top: 10px; margin-bottom: 100px;">
+                                    <input type="submit" name="ctl00$mainContent$btnUpdate" value="Update" id="ctl00_mainContent_btnUpdate" class="btn btn-primary" style="margin-top: 10px; margin-bottom: 100px;">
                                 </div>
                             </div>
                             </form>

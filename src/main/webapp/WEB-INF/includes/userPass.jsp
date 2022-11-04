@@ -46,23 +46,32 @@
                     
             </div>
             <div class="col-md-6">
+            <form action="changePass" method="post">
+            <input type="hidden" name="person_idd" id="person_idd" value="<%=acc.getUserID()%>">
                     <h2>Change Password</h2>
-                    <label>Current Password</label>
-                    <div class="form-group pass_show">
-                        <input type="password" value="faisalkhan@123" class="form-control" placeholder="Current Password">
-                    </div>
                     <label>New Password</label>
                     <div class="form-group pass_show">
-                        <input type="password" value="faisal.khan@123" class="form-control" placeholder="New Password">
+                        <input name="newPassword" id="newPassword" type="password" class="form-control" placeholder="New Password">
                     </div>
                     <label>Confirm Password</label>
                     <div class="form-group pass_show">
-                        <input type="password" value="faisal.khan@123" class="form-control" placeholder="Confirm Password">
+                        <input name="cnewPassword" id="cnewPassword" type="password" class="form-control" placeholder="Confirm Password">
                     </div>
                     <div class="form-group" style="margin-top: 10% ;">
                         <input name="recover-submit" class="btn btn-lg btn-primary btn-block" value="Change Password" type="submit">
                     </div>
+                     </form>
+                     <span id='message'></span>
                 </div>
+               
         </div>
     </div>
+    <script>
+    $('#newPassword, #cnewPassword').on('keyup', function () {
+    	  if ($('#newPassword').val() == $('#cnewPassword').val()) {
+    	    $('#message').html('Matching').css('color', 'green');
+    	  } else 
+    	    $('#message').html('Passwords not match').css('color', 'red');
+    	});
+    </script>
     </section>

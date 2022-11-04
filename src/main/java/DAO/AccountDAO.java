@@ -188,8 +188,31 @@ public class AccountDAO {
 			con = db.getConnection();
 			PreparedStatement statement = con.prepareStatement(sql);
 			statement = con.prepareStatement(sql);
-			statement.setString(1, id);
-			statement.setString(2, name);
+			statement.setString(1, name);
+			statement.setInt(2, Integer.parseInt(id));
+			statement.execute();
+		} catch (Exception e) {
+			Logger.getLogger(AccountDAO.class.getName()).log(Level.SEVERE, null, e);
+		} finally {
+			try {
+				DBUtils.closeConnection(con);
+			} catch (SQLException e) {
+				Logger.getLogger(AccountDAO.class.getName()).log(Level.SEVERE, null, e);
+			}
+		}
+	}
+
+	// doi mat khau
+	public void updPass(String id, String newpw) {
+		DBUtils db = DBUtils.getInstance();
+		String sql = "Update users SET password=? where user_id=?";
+		Connection con = null;
+		try {
+			con = db.getConnection();
+			PreparedStatement statement = con.prepareStatement(sql);
+			statement = con.prepareStatement(sql);
+			statement.setString(1, newpw);
+			statement.setInt(2, Integer.parseInt(id));
 			statement.execute();
 		} catch (Exception e) {
 			Logger.getLogger(AccountDAO.class.getName()).log(Level.SEVERE, null, e);

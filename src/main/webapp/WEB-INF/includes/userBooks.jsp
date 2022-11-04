@@ -64,7 +64,7 @@
                             </p>
                             <p>
                             </p>
-                            <p class="desClass"> <%=i.getDescription() %>
+                            <p class="desClass desLine"> <%=i.getDescription() %>
                             </p>
                         </div>
                     </div>
