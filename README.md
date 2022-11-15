@@ -8,10 +8,10 @@ Google books API, ITBookStore API, Jquery, HTML, CSS, JS, Java Servlet, JSP, Pos
 Website link: www.ridbuk.xyz
 
 You can create an account to login, 
-- Read free books on the home page
-- Search for books 
+- Read free books on the home page.
+- Search for books.
 - Note that if you click buy button, you will be directed to paypal, but you don't have to pay, just go back to the site and check your profile, the desired book
 will be displayed there (The payment method is not fully implemented since this website does not serve commercial purpose.
 - You can read your owned books in profile.
 
-- For security and my privacy, I will not provide database credentials here, you can create your own database
+For security and my privacy, I will not provide database credentials here.
