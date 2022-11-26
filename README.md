@@ -14,4 +14,3 @@ You can create an account to login,
 will be displayed there (The payment method is not fully implemented since this website does not serve commercial purpose).
 - You can read your owned books in profile.
 
-For security and my privacy, I will not provide database credentials here.
