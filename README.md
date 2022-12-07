@@ -1,4 +1,6 @@
 # testHerokuRidBuk
+Because heroku is no longer free so the I cannot deploy onto web server.
+
 RidBuk webapp
 
 A simple ebook website without any commercial purpose.
