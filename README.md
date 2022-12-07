@@ -1,5 +1,5 @@
 # testHerokuRidBuk
-Because heroku is no longer free so the I cannot deploy onto web server.
+Because heroku is no longer free so I cannot deploy onto web server.
 
 RidBuk webapp
 
