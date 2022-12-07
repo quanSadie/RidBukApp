@@ -61,8 +61,6 @@
         </div>
 
 
-        <a class="nav-link" href="addbook.jsp">Add a book</a>
-
     </nav>
     <!-- Header & navigation bar END-->
 
